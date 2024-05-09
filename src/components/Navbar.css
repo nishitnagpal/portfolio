@@ -1,0 +1,153 @@
+
+button {
+    background-color: transparent;
+    color: #42b883;
+    border: 1px solid;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+/*New css*/
+/*
+.navbar{
+  display: flex;
+  height: 2.9rem;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+*/
+.logo1, .dropdown img {
+    height: auto;
+    width: 30px;
+    padding-right: 20px;
+}
+
+.dropdown img {
+    margin-top: 6px;
+}
+
+.logo-container {
+    position: absolute;
+    background-color: #42b883;
+    border-radius: 25px;
+    height: auto;
+    --logo-cotainer-width: auto;
+    padding-left: 20px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    top: 16px;
+    right: 20px;
+    z-index: 9999;
+}
+
+/* Initially hide the dropdown menu */
+#dropdownMenu {
+    display: none;
+}
+
+    /* Show the dropdown menu when the .show class is applied */
+    #dropdownMenu.show {
+        display: block;
+    }
+
+
+#dropdownContainer {
+    position: relative; /* Set position relative for the container */
+    display: inline-block; /* Ensure container width matches content width */
+}
+
+    #dropdownContainer img {
+        cursor: pointer; /* Change cursor to pointer for better UX */
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #252526;
+    color: white;
+    top: 100%;
+    left: 0;
+    border-radius: 25px;
+    width: 140px;
+    padding-bottom: 10px;
+}
+
+    .dropdown-content a {
+        color: #42b883;
+        display: block;
+    }
+/*
+.option1 img {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  left: 10px;
+  padding: 0;
+}
+
+.option1 {
+  display: flex;
+  align-items: center;
+}
+*/
+.toggle-switch {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    padding: 0;
+}
+
+.styled-text {
+    font-size: 16px;
+    margin-top: 8px;
+    margin-left: 50px;
+}
+
+
+.toggle-switch input {
+    display: none; /* Hide the actual checkbox */
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-switch img {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left: 10px;
+    padding: 0;
+}
+
+.logo-text {
+    margin: 0 5px 0 0;
+    font-weight: bold;
+}
+/*Font change css*/
+
+.font-change .container p {
+    font-size: 20px !important;
+}
+
+.font-change .greetings {
+    padding: 60px 100px 0px 0px !important;
+}
+
+/* Font change css*/
