@@ -38,9 +38,9 @@ export default {
         image: websitedesktopImage,
         title: 'Learning Ability and Adaptivity of Digital Consulting Assistant and Content Management System' ,
         description: 'WordPress-based knowledge base to aid elderly, disabled, and vulnerable individuals with chatbot and other plugins to teach the site to learn and adapt to user interactions. ',
-        liveLocation: 'https://nishitnagpal.github.io/thesiswebsite',
+        liveLocation: 'https://nishitnagpal.github.io/thesis_website',
         buttons: ['WordPress', 'mySQL', 'PHP', 'NLP'],
-        githubLink: 'https://github.com/nishitnagpal/thesiswebsite'
+        githubLink: 'https://github.com/nishitnagpal/thesis_website'
         }
       ]
     };
