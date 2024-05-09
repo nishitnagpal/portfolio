@@ -173,7 +173,7 @@ ChatGPT
 
 .form{
     padding-right:25px;
-    padding-top: 2.5em;
+    border: 2px solid red;
 }
 
 .socials{

@@ -68,7 +68,7 @@ export default {
                 <div class="menu-item">
                     <label class="toggle-switch" @click="toggleContrast">
                         <input type="checkbox" v-model="contrastToggleValue">
-                        <img v-bind:src="contrastToggleValue ? './toggleon.svg' : './toggleoff.svg'" alt="Toggle Image">
+                        <img v-bind:src="contrastToggleValue ? './images/toggle-on.svg' : './images/toggle-off.svg'" alt="Toggle Image">
                     </label>
                     <!--<img src="./images/toggle-on.svg" alt="Toggle-0n Icon">-->
                     <span class="styled-text">Contrast</span>
@@ -77,7 +77,7 @@ export default {
                 <div class="menu-item">
                     <label class="toggle-switch" @click="toggleFont">
                         <input type="checkbox" v-model="fontToggleValue">
-                        <img v-bind:src="fontToggleValue ? './toggleon.svg' : './toggleoff.svg'" alt="Toggle Image">
+                        <img v-bind:src="fontToggleValue ? '/toggle-on.svg' : '/toggle-off.svg'" alt="Toggle Image">
                     </label>
                     <!--<img src="./images/toggle-on.svg" alt="Toggle-0n Icon">-->
                     <span class="styled-text">Font</span>

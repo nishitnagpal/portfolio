@@ -68,7 +68,7 @@ export default {
                 <div class="menu-item">
                     <label class="toggle-switch" @click="toggleContrast">
                         <input type="checkbox" v-model="contrastToggleValue">
-                        <img v-bind:src="contrastToggleValue ? './toggleon.svg' : './toggleoff.svg'" alt="Toggle Image">
+                        <img v-bind:src="contrastToggleValue ? './toggleonImage' : './toggleoffImage'" alt="Toggle Image">
                     </label>
                     <!--<img src="./images/toggle-on.svg" alt="Toggle-0n Icon">-->
                     <span class="styled-text">Contrast</span>

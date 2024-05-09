@@ -1,11 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
     "\\src",
     "\\src\\assets",
     "\\src\\components",
+    "\\src\\components\\images",
     "\\src\\router"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\public\\toggleon.svg",
   "PreviewInSolutionExplorer": false
 }
