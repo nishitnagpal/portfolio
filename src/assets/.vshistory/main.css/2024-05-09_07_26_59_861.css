@@ -10,10 +10,9 @@ body {
 }
 
 #app {
-  max-width: 1280px;
+  max-width: 1440px;
   margin-left: 2em;
   font-weight: normal;
-
 } 
 /*
 a,
@@ -55,10 +54,4 @@ a,
         margin: 0 auto; /* Center the container horizontally */
         padding: 0 20px; /* Add some padding to the sides for better readability */
     }
-    #app {
-        max-width: 1440px;
-        margin: 0 auto;
-        /*margin-left: 2em;*/
-        font-weight: normal;
-    } 
 }

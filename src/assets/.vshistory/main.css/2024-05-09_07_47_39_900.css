@@ -10,8 +10,9 @@ body {
 }
 
 #app {
-  max-width: 1280px;
-  margin-left: 2em;
+  max-width: 1440px;
+  margin: 0 auto;
+  /*margin-left: 2em;*/
   font-weight: normal;
 
 } 

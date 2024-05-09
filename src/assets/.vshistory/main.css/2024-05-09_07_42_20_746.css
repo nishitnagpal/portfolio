@@ -10,8 +10,9 @@ body {
 }
 
 #app {
-  max-width: 1280px;
-  margin-left: 2em;
+  max-width: 1440px;
+  margin: 0 auto;
+  /*margin-left: 2em;*/
   font-weight: normal;
 
 } 
@@ -55,10 +56,15 @@ a,
         margin: 0 auto; /* Center the container horizontally */
         padding: 0 20px; /* Add some padding to the sides for better readability */
     }
-    #app {
-        max-width: 1440px;
-        margin: 0 auto;
-        /*margin-left: 2em;*/
-        font-weight: normal;
-    } 
+    .box1, .box2, .box3, .box4 {
+        width: 200px;
+        height: 130px;
+        border: 1px solid #42b883;
+        padding: 60px 10px 0px 10px;
+        margin: 50px 20px 50px 20px;
+        border-radius: 0.5rem;
+        background-color: papayawhip;
+        transition: transform 0.3s ease-in-out;
+        text-align: center;
+    }
 }
