@@ -49,7 +49,7 @@ export default {
         description: 'These games, originally written in Pygame, have been deployed via GitHub Pages after converting the Python files to JavaScript. All the games are then compiled in Webflow, which offers a user-friendly platform for website design. ',
         liveLocation: 'https://retro-style-python-games.webflow.io/',
         buttons: ['Webflow', 'Pygame', 'JavaScript', 'HTML5'],
-        githubLink: 'https://github.com/nishitnagpal/Pygame_Webflow'
+        githubLink: 'https://github.com/nishitnagpal/webflowpygame'
         }
       ]
     };

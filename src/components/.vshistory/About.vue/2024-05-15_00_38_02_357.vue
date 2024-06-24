@@ -16,9 +16,7 @@
     import phpImage from '@/components/images/php.svg';
     import mysqlImage from '@/components/images/mysql.svg';
     import autocadImage from '@/components/images/autocad.svg';
-    import catiaImage from '@/components/images/catia.png';
-    import solidworksImage from '@/components/images/solidworks.svg';
-    import unityImage from '@/components/images/unity.svg';
+    import catiaImage from '@/components/images/catia.svg';
     import jiraImage from '@/components/images/jira.svg';
 
 export default {
@@ -32,15 +30,7 @@ export default {
             {
                 src: catiaImage,
                 description: 'CATIA'
-            },
-            {
-                src: solidworksImage,
-                description: 'Solidworks'
-            },
-            {
-                src: unityImage,
-                description: 'Unity'
-            },
+             },
             {
                 src: jiraImage,
                 description: 'Jira'

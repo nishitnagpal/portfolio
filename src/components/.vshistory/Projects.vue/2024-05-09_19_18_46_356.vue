@@ -9,7 +9,7 @@
 import resumedesktopImage from '@/components/images/resume-desktop.png';
 import shoppingdesktopImage from '@/components/images/shopping-desktop.png';
 import websitedesktopImage from '@/components/images/website-desktop.png';
-import webflowdesktopImage from '@/components/images/webflow-desktop.png';
+//import portfoliodesktopImage from '@/components/images/portfolio-desktop.png';
 
 export default {
   data() {
@@ -41,15 +41,6 @@ export default {
         liveLocation: 'https://nishitnagpal.github.io/thesiswebsite',
         buttons: ['WordPress', 'mySQL', 'PHP', 'NLP'],
         githubLink: 'https://github.com/nishitnagpal/thesiswebsite'
-        },
-        {
-        id: 4,
-        image: webflowdesktopImage,
-        title: 'Collection of arcade style games written in Python and assembled in Webflow' ,
-        description: 'These games, originally written in Pygame, have been deployed via GitHub Pages after converting the Python files to JavaScript. All the games are then compiled in Webflow, which offers a user-friendly platform for website design. ',
-        liveLocation: 'https://retro-style-python-games.webflow.io/',
-        buttons: ['Webflow', 'Pygame', 'JavaScript', 'HTML5'],
-        githubLink: 'https://github.com/nishitnagpal/Pygame_Webflow'
         }
       ]
     };
@@ -86,6 +77,7 @@ export default {
     justify-content: space-around; /* Items are equally spaced across the container */
     flex-wrap: wrap; /* Allows items to wrap to the next row if necessary */
     margin-top: 3em; /* Add margin to separate from the navbar */
+    align-items: center;
 }
 
 .project-item {

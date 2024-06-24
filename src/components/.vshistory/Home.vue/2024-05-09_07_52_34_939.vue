@@ -100,7 +100,7 @@ export default {
         <h1> NISHIT NAGPAL </h1>
         <h3> FRONTEND DEVELOPER </h3>
         <p>
-            Mechatronics Enginneer with background in HVAC as Planning Engineer <br /> Self-taught frontend developer passionate about crafting immersive digital experiences. My background in mechanical engineering and mechatronics uniquely positions me to approach frontend development from a holistic perspective, considering both the technical intricacies and the human-centric aspects of design.
+            Self-taught frontend developer passionate about crafting immersive digital experiences. My background in mechanical engineering and mechatronics uniquely positions me to approach frontend development from a holistic perspective, considering both the technical intricacies and the human-centric aspects of design.
         </p>
 
         <a href="https://nishitnagpal.github.io/cv/" target="_blank" rel="noopener noreferrer">
