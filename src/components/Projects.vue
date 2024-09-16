@@ -10,6 +10,7 @@ import resumedesktopImage from '@/components/images/resume-desktop.png';
 import shoppingdesktopImage from '@/components/images/shopping-desktop.png';
 import websitedesktopImage from '@/components/images/website-desktop.png';
 import webflowdesktopImage from '@/components/images/webflow-desktop.png';
+import metrodesktopImage from '@/components/images/metro-desktop.png';
 
 export default {
   data() {
@@ -48,8 +49,17 @@ export default {
         title: 'Collection of arcade style games written in Python and assembled in Webflow' ,
         description: 'These games, originally written in Pygame, have been deployed via GitHub Pages after converting the Python files to JavaScript. All the games are then compiled in Webflow, which offers a user-friendly platform for website design. ',
         liveLocation: 'https://retro-style-python-games.webflow.io/',
-        buttons: ['Webflow', 'Pygame', 'JavaScript', 'HTML5'],
+        buttons: ['Webflow', 'Pygame', 'JavaScript'],
         githubLink: 'https://github.com/nishitnagpal/Pygame_Webflow'
+        },
+        {
+        id: 5,
+        image: metrodesktopImage,
+        title: 'Kolkata Metro Timings App with Next.js using Py Scrapy' ,
+        description: 'A responsive Next.js app hosted through Vercel that provides real-time metro train timings using Python Scrapy to fetch and process data, ensuring users never miss their train. Features include dynamic schedules and intuitive station selection.',
+        liveLocation: 'https://kolkata-metro-timings.vercel.app/',
+        buttons: ['Next.js', 'Scrapy.py', 'JavaScript'],
+        githubLink: 'https://github.com/nishitnagpal/KolkataMetroTimings'
         }
       ]
     };

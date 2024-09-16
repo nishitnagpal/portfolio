@@ -278,6 +278,14 @@ export default {
             <h3 id = "experience"> Experience </h3>
             <p>
                 <span class="visible">
+                    Flink GmbH <br /> Software Engineer, Aug. 2023 - April 2024 <br /> <br />
+                    - Revamped the warehouse management system's user interface to clearly detail FIFO processes for each article, reducing restocking time by 50%.  <br />
+                    - Redesigned the desktop website to include a click-and-collect ordering option, enhancing the user experience and significant increase in online orders by 25%. <br />
+                    <span @click="toggleEnlarge('experience', $event)"> <br /> </span>
+                </span>
+            </p>
+            <p>
+                <span class="visible">
                     Sterling & Wilson Pvt. Ltd. <br /> Engineer-Planning, July 2017- Sept. 2018 <br /> <br />
                     - Undertook crucial responsibilities in quality inspection and control visits. <br />
                     - Played a pivotal role in devising and executing strategies geared towards cost reduction and optimal resource utilization. <br />

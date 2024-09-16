@@ -102,10 +102,11 @@ export default {
         <p>
             Mechatronics Enginneer with background in HVAC as Planning Engineer <br /> Self-taught frontend developer passionate about crafting immersive digital experiences. My background in mechanical engineering and mechatronics uniquely positions me to approach frontend development from a holistic perspective, considering both the technical intricacies and the human-centric aspects of design.
         </p>
-
+        <!--
         <a href="https://nishitnagpal.github.io/cv/" target="_blank" rel="noopener noreferrer">
             <button> Know Me </button>
         </a>
+        -->
         <a href="https://www.linkedin.com/in/nishitnagpal" target="_blank" rel="noopener noreferrer">
             <img alt="linkedin logo" src="./images/linkedin.svg" />
         </a>
@@ -198,7 +199,7 @@ button {
     height: 35px;
     width: auto;
     vertical-align: middle;
-    padding: 0px 0px 0px 10px;
+    padding: 0px 30px 0px 0px;
     display: inline-block;
 }
 

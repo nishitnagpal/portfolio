@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Nishit\\project\\portfolio\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nishit\\project\\portfolio\\src\\components\\Home.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Home.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nishit\\project\\portfolio\\src\\components\\Contact.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Contact.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nishit\\project\\portfolio\\src\\components\\Projects.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Projects.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -23,12 +31,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Home.vue",
+              "DocumentMoniker": "C:\\Users\\Nishit\\project\\portfolio\\src\\components\\Home.vue",
+              "RelativeDocumentMoniker": "src\\components\\Home.vue",
+              "ToolTip": "C:\\Users\\Nishit\\project\\portfolio\\src\\components\\Home.vue",
+              "RelativeToolTip": "src\\components\\Home.vue",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-08-08T11:26:29.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Contact.vue",
+              "DocumentMoniker": "C:\\Users\\Nishit\\project\\portfolio\\src\\components\\Contact.vue",
+              "RelativeDocumentMoniker": "src\\components\\Contact.vue",
+              "ToolTip": "C:\\Users\\Nishit\\project\\portfolio\\src\\components\\Contact.vue",
+              "RelativeToolTip": "src\\components\\Contact.vue",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAACQAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2024-08-08T09:57:33.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Projects.vue",
               "DocumentMoniker": "C:\\Users\\Nishit\\project\\portfolio\\src\\components\\Projects.vue",
               "RelativeDocumentMoniker": "src\\components\\Projects.vue",
               "ToolTip": "C:\\Users\\Nishit\\project\\portfolio\\src\\components\\Projects.vue",
               "RelativeToolTip": "src\\components\\Projects.vue",
-              "ViewState": "AQIAACAAAAAAAAAAAAAIwDMAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
               "WhenOpened": "2024-05-07T00:42:55.746Z",
               "EditorCaption": ""
