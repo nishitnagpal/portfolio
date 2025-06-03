@@ -1,15 +1,60 @@
 <script>
 
+import { state } from "@/components/State.js";
+
 export default {
-  data() {
-    return {
-        contrastToggleValue: true,
-        fontToggleValue: true, // Initial value of the toggle switch
-        isDropdownVisible: false
-    };
-  },
+    data() {
+        return {
+            //contrastToggleValue: false,
+            //fontToggleValue: false, 
+            isDropdownVisible: false,
+            //isHamburgerMenuOpen: false, 
+        };
+    },
+
+    computed: {
+        contrastToggleValue: {
+            get() {
+                return state.contrastToggleValue;
+            },
+            set(value) {
+                state.contrastToggleValue = value;
+            },
+        },
+        fontToggleValue: {
+            get() {
+                return state.fontToggleValue;
+            },
+            set(value) {
+                state.fontToggleValue = value;
+            },
+        },
+        contrastLabel() {
+            return this.contrastToggleValue ? "Light mode" : "Dark mode";
+        },
+        fontLabel() {
+            return this.fontToggleValue ? "Big Font" : "Small Font" ;
+        },
+    },
+
+    watch: {
+        contrastToggleValue(newValue) {
+            if (newValue) {
+                document.body.classList.add('contrast-change');  // Apply contrast-change class to body
+            } else {
+                document.body.classList.remove('contrast-change');  // Remove contrast-change class from body
+            }
+        },
+        fontToggleValue(newValue) {
+            if (newValue) {
+                document.body.classList.add('font-change');  // Apply font-change class 
+            } else {
+                document.body.classList.remove('font-change');  // Remove font-change class
+            }
+        }
+    },
  
-  methods: {
+    methods: {  
       toggleDropdown() {
           var dropdownMenu = document.getElementById("dropdownMenu");
           if (!dropdownMenu) {
@@ -21,44 +66,42 @@ export default {
           // Update the flag based on the visibility of the dropdown menu
           this.isDropdownVisible = dropdownMenu.classList.contains("show");
       },
-      toggleContrast() {
-          //console.log("Contrast toggle switch is:", this.contrastToggleValue)
-              if (this.contrastToggleValue) {
-              // Apply contrast mode (add 'contrast' class)
-              document.documentElement.classList.add('contrast');
-          } else {
-              // Remove contrast mode (remove 'contrast' class)
-              document.documentElement.classList.remove('contrast');
-          }
-             // console.log("Contrast mode is now:", document.documentElement.classList.contains('contrast') ? "ON" : "OFF");
+      /*
+      toggleHamburgerMenu() {
+        this.isHamburgerMenuOpen = !this.isHamburgerMenuOpen;
+        console.log("Hamburger menu clicked!");
       },
-      toggleFont() {
-          //console.log("Font toggle switch is:", this.fontToggleValue)
-          if (this.fontToggleValue) {
-              document.documentElement.classList.add('font-change');
-          } else {
-              document.documentElement.classList.remove('font-change');
-          }
-          // console.log("Contrast mode is now:", document.documentElement.classList.contains('font_increase') ? "ON" : "OFF");
-
-      },
-      mounted() {
-          this.toggleDropdown();
-          this.toggleContrast();
-          this.toggleFont();
-      }
-  }
+      */
+    }
 };
 </script>
 
 <template>
 <div class="navbar">
-        <nav>
-            <RouterLink to="/"> Home </RouterLink>
-            <RouterLink to="/About"> About </RouterLink>
-            <RouterLink to="/Projects"> Projects </RouterLink>
-            <RouterLink to="/Contact"> Contact </RouterLink>
-        </nav>
+    <nav>
+        
+        <!-- Hamburger Icon 
+        <div class="hamburger-container" @click="toggleHamburgerMenu">
+            <img src="./images/hamburger.svg" alt="Hamburger Menu" class="hamburger-icon">
+            
+        </div>
+
+        <div v-if="isHamburgerMenuOpen" class="hamburger-menu">
+            <ul>
+                <li><RouterLink to="/Projects">Projects</RouterLink></li>
+                <li><RouterLink to="/About">About</RouterLink></li>
+                <li><RouterLink to="/Contact">Contact</RouterLink></li>
+                <li><a href="Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+            </ul>
+        </div>
+        -->
+        
+
+        <RouterLink to="/"> Home </RouterLink>
+        <RouterLink to="/About"> About </RouterLink>
+        <RouterLink to="/Projects"> Projects </RouterLink>
+        <RouterLink to="/Contact"> Contact </RouterLink>
+    </nav>
     
     <!-- Logos -->
     <div class="logo-container">
@@ -66,25 +109,26 @@ export default {
             <img src="./images/settings.svg" alt="Settings for Dropdown Menu Logo" @click="toggleDropdown()">
             <div class="dropdown-content" id="dropdownMenu">
                 <div class="menu-item">
-                    <label class="toggle-switch" @click="toggleContrast">
-                        <input type="checkbox" v-model="contrastToggleValue">
+                    <label class="toggle-switch">   
+                        <input type="checkbox" v-model="contrastToggleValue" />
                         <img v-bind:src="contrastToggleValue ? './toggleon.svg' : './toggleoff.svg'" alt="Toggle Image">
                     </label>
                     <!--<img src="./images/toggle-on.svg" alt="Toggle-0n Icon">-->
-                    <span class="styled-text">Contrast</span>
+                    <span class="styled-text">{{ contrastLabel }}</span>
                 </div>
 
                 <div class="menu-item">
-                    <label class="toggle-switch" @click="toggleFont">
-                        <input type="checkbox" v-model="fontToggleValue">
+                    <!--<label class="toggle-switch" @click="toggleFont">-->
+                    <label class="toggle-switch">
+                        <input type="checkbox" v-model="fontToggleValue" />
                         <img v-bind:src="fontToggleValue ? './toggleon.svg' : './toggleoff.svg'" alt="Toggle Image">
                     </label>
                     <!--<img src="./images/toggle-on.svg" alt="Toggle-0n Icon">-->
-                    <span class="styled-text">Font</span>
+                    <span class="styled-text">{{ fontLabel }}</span>
                 </div>
             </div>
         </div>
-
+            
         <template v-if="isDropdownVisible">
             <div class="logo-text">  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; </div>
         </template>
@@ -100,7 +144,6 @@ export default {
 <style scoped>
 /* Import styles from Navbar.css */    
 @import './Navbar.css';
-
 
 nav a {
   float: left; /* Float the anchor elements (links) to the left */
@@ -121,23 +164,23 @@ nav a:hover {
 }
 
 nav a.router-link-exact-active{
-   background-color: white;
+   background-color: #FAFAD2;
    color: black;
    pointer-events: none;
    border-radius: 10px;
 }
 
-.contrast nav a {
-   background-color: white;
+.contrast-change nav a {
+   background-color: #FAFAD2;
    color: #252526;
 }
 
-.contrast nav a.router-link-exact-active {
-    color: white;
+.contrast-change nav a.router-link-exact-active {
+    color: #FAFAD2;
     background-color: #252526;
 } 
 
-.contrast a:hover {
+.contrast-change a:hover {
     background-color: #42b883;
 }
 
